@@ -1,6 +1,6 @@
-'''
+"""
 Booleans & Operators
-'''
+"""
 
 is_human = True
 love_fashion = False
@@ -12,19 +12,18 @@ print(type(love_fashion))
 print(type(is_human))
 
 
-'''
+"""
 Comparison Operators
-'''
-
+"""
 print(2 == 3)
 print(2 != 3)
 print(2 >= 3)
 print(2 <= 3)
 
-'''
-Logical Operators
-'''
 
+"""
+Logical Operators
+"""
 print(2 >= 3 and 4 < 1)
 print(2 >= 3 or 4 < 1)
 print(2 <= 3 or 4 < 1)

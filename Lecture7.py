@@ -1,6 +1,6 @@
-'''
+"""
 Flow Control - if statements
-'''
+"""
 
 number = 100
 
@@ -11,9 +11,10 @@ if number == 100:
     print('I prefer curly brackets for readability')
 print('Enf of application')
 
-'''
+
+"""
 Flow Control - else statements
-'''
+"""
 number = 450
 if number == 500:
     print(f'{number} is a good number')
@@ -29,9 +30,9 @@ else:
 print(message)
 
 
-'''
+"""
 Flow Control - Elif statement (java's else-if)
-'''
+"""
 
 hour = 22
 if hour < 13:

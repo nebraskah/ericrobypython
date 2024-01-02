@@ -1,6 +1,7 @@
-'''
+"""
 For Loops
-'''
+"""
+
 
 numbers_list = [1, 2, 3, 4, 5]
 print(numbers_list[0])
@@ -28,9 +29,11 @@ for numb in numbers_game:
         continue
     print(numb)
 
-'''
+"""
 While Loops
-'''
+"""
+
+
 x = 0
 while x < 10:
     x += 1;
