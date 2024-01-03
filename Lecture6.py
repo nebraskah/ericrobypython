@@ -4,7 +4,7 @@ Booleans & Operators
 
 is_human = True
 love_fashion = False
-donut  = 'Donut'
+donut = 'Donut'
 fav_number = 5
 print(type(donut))
 print(type(fav_number))
