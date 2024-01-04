@@ -11,29 +11,50 @@ def rock_paper_scissors():
 
     print('ROCK PAPER SCISSORS SHOOT!')
     print()
-    print(f'{player_one} vs {player_two}')
+    print(f'{player_name(player_one)} vs {player_name(player_two)}')
 
     if player_one == 1:
         if player_two == 1:
-            print('rock DRAWS rock')
+            player_draws(player_one, player_two)
         elif player_two == 2:
-            print('rock LOSES paper')
+            player_loses(player_one, player_two)
         else:
-            print('rock BEATS scissors')
+            player_wins(player_one, player_two)
     elif player_one == 2:
         if player_two == 1:
-            print('paper BEATS rock')
+            player_wins(player_one, player_two)
         elif player_two == 2:
-            print('paper DRAWS paper')
+            player_draws(player_one, player_two)
         else:
-            print('paper LOSES scissors')
+            player_loses(player_one, player_two)
     else:
         if player_two == 1:
-            print('scissors LOSES rock')
+            player_loses(player_one, player_two)
         elif player_two == 2:
-            print('scissors BEATS paper')
+            player_wins(player_one, player_two)
         else:
-            print('scissors DRAWS scissors')
+            player_draws(player_one, player_two)
+
+
+def player_name(player_key_arg):
+    if player_key_arg == 1:
+        return 'ROCK'
+    elif player_key_arg == 2:
+        return 'PAPER'
+    else:
+        return 'SCISSORS'
+
+
+def player_draws(player_one, player_two):
+    print(f'{player_name(player_one)} DRAWS {player_name(player_two)}')
+
+
+def player_loses(player_one, player_two):
+    print(f'{player_name(player_one)} LOSES to {player_name(player_two)}')
+
+
+def player_wins(player_one, player_two):
+    print(f'{player_name(player_one)} BEATS {player_name(player_two)}')
 
 
 rock_paper_scissors()
